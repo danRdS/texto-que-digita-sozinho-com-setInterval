@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: #e7e7e7;
+}
+
+main {
+    background-color: #212121;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.paragrafo-animado {
+    background: linear-gradient(to right bottom, #663399, #00008b);
+    width: 210px;
+    padding: .3rem .5rem;
+    border-radius: .1rem;
+    white-space: nowrap;
+}
+
+#palavraAnimada {
+    color: #f34;
+    font-weight: 700;
+    border-right: 1px solid #f34;
+    animation: piscar .7s linear infinite;
+}
+
+#palavraAnimada:after {
+    content: '';
+    display: inline-block;
+}
+
+@keyframes piscar { 50% { border-color: transparent; } }
